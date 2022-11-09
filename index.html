@@ -5,22 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="color-scheme" content="dark light"> -->
     <title>Donovan | Developer</title>
-    <link rel="stylesheet" href="./assets/css/style.css" /> 
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="./assets/javascript/sidebar.js"></script>
 </head>
 
 <body>
     <!--Header-->
     <header>
         <h1>Donovan</h1>
-        <div class="sidebar" id="sidebar" onmouseover="mouseIn" onmouseout="mouseOut">
-
-            <a href="#" id="my-about">About Me</a>
-            <a href="#" id="my-projects">My Projects</a>
-            <a href="#" id="my_contact">Contact Info</a>
-        </div>
     </header>
+
+
 
     <!--Hero Banner-->
     <section class="hero-banner">
@@ -31,20 +29,25 @@
 
     <!--Main Content-->
     <main>
+        <div id="sidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+            <a href="#"><i class="material-icons">info</i>About Me</a>
+            <a href="#"><i class="material-icons">work</i>My Projects</a>
+            <a href="#"><i class="material-icons">email</i>Contact Info</a>
+        </div>
+
+
+        <div id="content">
+            <h2>Main Content Area</h2>
+            <p>Blah Blah Blah</p>
+            <p>More Blah</p>
+        </div>
+
+
 
     </main>
 
     <footer></footer>
 </body>
-
-<script>
-    function mouseIn() {
-        console.log("hovering inside sidebar");
-    }
-    function mouseOut() {
-        console.log("hovering outside sidebar")
-    }
-</script>
 
 <!--Footer-->
 <footer>
