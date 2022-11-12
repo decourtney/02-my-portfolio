@@ -23,46 +23,62 @@
 
     <!--Header-->
     <header>
-
+        <h1>Whats this button do...</h1>
+        <p>"This is a famous quote that is so cryptic that it only appears to be full of wisdom" - That Guy</p>
     </header>
 
 
 
     <!--Main Content-->
     <main>
-
-        <aside class="mainMenu">
-                <img src="./assets/images/D.png" alt="The letter D">
+        <section class="menu">
+            <nav class="sticky">
+                <a href="#initialDisplay"><img src="./assets/images/D.png" alt="The letter D"></a>
                 <ul>
-                    <li><a href="#"></i><i class="material-icons md-16">info</i><div class="menuItem">About
-                                Me</div></a>
+                    <li><a href="#aboutDisplay"></i><i class="material-icons md-16">info</i>
+                            <div class="menuItem">About</div>
+                        </a>
                     </li>
-                    <li><a href="#"></i><i class="material-icons md-16">build</i><div class="menuItem">My
-                                Projects</div></a>
+                    <li><a href="#workDisplay"></i><i class="material-icons md-16">build</i>
+                            <div class="menuItem">Work</div>
+                        </a>
                     </li>
-                    <li><a href="#"></i><i class="material-icons md-16">email</i><div class="menuItem">Contact
-                                Info</div></a>
+                    <li><a href="#contactDisplay"></i><i class="material-icons md-16">email</i>
+                            <div class="menuItem">Contact</div>
+                        </a>
                     </li>
                 </ul>
-        </aside>
+            </nav>
+        </section>
 
-        <div class="content">
-            <h2>Main Content Area</h2>
-            <br>
-            <p>Blah Blah Blah</p>
-            <br>
-            <p>More Blah</p>
-        </div>
-
-
+        <section class="swap">
+            <div id="initialDisplay">
+                <h2>Hi! I'm Donovan. Yup</h2>
+                <img id="myPic" src="./assets/images/portfoliopic.jpg">
+            </div>
+            <div id="aboutDisplay">
+                <h2>About</h2>
+                <p>This is some really interesting stuff about. Additionally, this is also really fascinating.</p>
+            </div>
+            <div id="workDisplay">
+                <h2>Work</h2>
+                <p>WORK! WORK!</p>
+            </div>
+            <div id="contactDisplay">
+                <h2>Contact</h2>
+                <p>Reach out and touch faith.</p>
+            </div>
+        </section>
 
     </main>
 
+    <!--Footer-->
+    <footer>
+        <section>
+            <h3>Fancy Copyright and a Nifty Trademark</h3>
+        </section>
+    </footer>
+
 </body>
-
-<!--Footer-->
-<footer>
-
-</footer>
 
 </html>
