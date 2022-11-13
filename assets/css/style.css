@@ -12,7 +12,7 @@ body
 {
     background-color: rgb(0, 0, 0);
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.0;
     font-family: -apple-system,
         BlinkMacSystemFont,
         'Segoe UI',
@@ -25,44 +25,56 @@ body
         'Segoe UI Symbol';
 }
 
-#waveVideo
+.flexWrapper
 {
-    position: fixed;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: blur(2px);
-    opacity: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
 
 h1,
 h2,
 h3
 {
+    /* BG color is just for visibility while building */
+    background-color: rgb(248, 7, 176);
     color: beige;
     font-weight: 700;
     font-size: 3.0rem;
     padding: 0 1rem;
-    background-color: rgb(248, 7, 176)
+}
+
+h2,
+h3
+{
+    font-family: "Ephesis";
+    font-size: 10rem;
+    padding: 20% 0 0 10%;
+    text-align: left;
+}
+
+p
+{
+    /* BG color is just for visibility while building */
+    background-color: darkgreen;
+    font-size: 2.5rem;
 }
 
 header,
 footer
 {
+    /* BG color is just for visibility while building */
+    background-color: brown;
     width: 100vw;
     height: 5%;
     text-align: center;
-    background-color: brown;
 }
 
 main
 {
     display: flex;
-    width: 100vw;
-    height: 100%;
+    /* width: 100vw; */
     margin: .5rem 0;
 }
 
@@ -76,14 +88,15 @@ main
     font-size: 2.4rem;
 }
 
-.sticky{
+.sticky
+{
     position: sticky;
-    top: 2rem;
+    top: 15rem;
 }
 
 .menu a
 {
-    color: rgb(161, 137, 0);
+    color: rgb(197, 168, 0);
     text-decoration: none;
 }
 
@@ -94,8 +107,8 @@ main
     right: 1rem;
     margin-bottom: 10%;
     width: 5rem;
-    height: auto;
-    opacity: 0.7;
+    /* height: auto; */
+    opacity: 0.9;
 }
 
 .menu ul,
@@ -124,24 +137,79 @@ i:hover
 
 .swap
 {
-    width: 100vw;
+    /* BG color is just for visibility while building */
     background-color: blueviolet;
+    width: 100vw;
     color: aliceblue;
+    /* height: 100vh; */
+    /* display: flex;
+    flex-direction: column; */
 }
 
-#myPic
+.mainSection
 {
-    max-width: 25%;
-    float: left;
-    margin-right: 2rem;
+    width: 100vw;
+}
+
+.content
+{
+    height: 100vh;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+}
+
+.contentBackground
+{
+    position: absolute;
+    background-image: url(../images/stars.jpg);
+    background-size: contain;
+    height: 100vh;
+    /* overflow: hidden; */
+    z-index: 1;
+}
+
+#profilePic
+{
+    max-width: 30%;
+    float: right;
+    margin: 5%;
+    border-radius: 20px;
+}
+
+.parallax
+{
+    height: 50vh;
+    /* position: relative; */
+    background-image: url(../images/binary-code.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    /* overflow: hidden; */
+    animation: sideScrollAnimation 10s infinite linear reverse;
+    opacity: 0.8;
 }
 
 footer
 {
-    height: 5rem;
+    margin-top: auto;
 }
 
-@media screen and (max-width: 780px)
+@keyframes sideScrollAnimation
+{
+    from
+    {
+        background-position: 0 0;
+    }
+
+    to
+    {
+        background-position: 100% 0;
+    }
+}
+
+@media screen and (max-width: 500px)
 {
     .menu
     {
@@ -171,9 +239,32 @@ footer
         right: 0.5rem;
     }
 
-    #myPic
+    p
     {
-        max-width: 100%;
-        /* max-height: 50%; */
+        font-size: 1.75rem;
+    }
+
+    h2
+    {
+        font-size: 6rem;
+        padding: 5% 0 0 10%;
+    }
+
+    h3
+    {
+        font-size: 8rem;
+        padding: 20% 0 0 5%;
+    }
+
+    #profilePic
+    {
+        margin: 0;
+        max-width: 75%;
+        float: unset;
+    }
+
+    .parallax
+    {
+        height: 25vh;
     }
 }
