@@ -1,3 +1,9 @@
+:root
+{
+    --lightGold: #FFFFB8;
+    --hoverGold: #FFE44B;
+}
+
 *
 {
     box-sizing: border-box;
@@ -10,9 +16,8 @@ html
 
 body
 {
-    background-color: rgb(0, 0, 0);
-    font-size: 1.75rem;
-    line-height: 1.0;
+    background-color: var(--lightGold);
+    line-height: 1.2;
     font-family: -apple-system,
         BlinkMacSystemFont,
         'Segoe UI',
@@ -27,10 +32,10 @@ body
 
 .flexWrapper
 {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 100vh;
+    min-height: 100vh; */
 }
 
 h1,
@@ -40,10 +45,10 @@ h4,
 h5
 {
     /* BG color is just for visibility while building */
-    background-color: rgb(248, 7, 176);
+    /* background-color: rgb(248, 7, 176); */
 
     display: block;
-    color: beige;
+    color: var(--lightGold);
     font-weight: 700;
     font-size: 3.0rem;
     padding: 0 1rem;
@@ -52,30 +57,29 @@ h5
 h2,
 h3
 {
+    color: var(--hoverGold);
     font-family: "Ephesis";
     font-size: 10rem;
     padding: 10% 0 0 10%;
     text-align: left;
 }
 
+h4{
+    color: var(--hoverGold)
+}
+
 h5{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 p
 {
-    /* BG color is just for visibility while building */
-    background-color: darkgreen;
-
     font-size: 2.5rem;
 }
 
 a
 {
-    /* BG color is just for visibility while building */
-    background-color: darkgoldenrod;
-
-    color: rgb(255, 234, 112);
+    color: var(--lightGold);
     text-decoration: none;
     font-size: 2.5rem;
     font-weight: 500;
@@ -84,29 +88,27 @@ a
 header,
 footer
 {
-    /* BG color is just for visibility while building */
-    background-color: brown;
-
-    width: 100vw;
-    height: 5%;
     text-align: center;
+    height: 6rem;
+    background-color: rgb(0, 0, 0);
+}
+
+footer
+{
+    padding: 2rem 0 0 0;
 }
 
 main
 {
     display: flex;
-    /* width: 100vw; */
-    margin: .5rem 0;
 }
 
 .menu
 {
-    /* BG color is just for visibility while building */
-    background-color: blue;
     top: 0;
     padding: 5% 5%;
-    margin: 0 .5rem;
-    font-size: 2.4rem;
+    margin: 0 0.1rem 0 0;
+    background-image: linear-gradient(black, grey, black);
 }
 
 .sticky
@@ -117,7 +119,6 @@ main
 
 .menu img
 {
-    /* height: auto; */
     position: relative;
     top: 0;
     right: 0.5rem;
@@ -140,32 +141,37 @@ li
     vertical-align: middle;
 }
 
+.menu ul a{
+    background: linear-gradient(to right, var(--lightGold), var(--hoverGold));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    font-size: 3rem;
+}
+
+.menu ul a:hover, .menu ul a:focus{
+    background-size: 0 0.1em, 100% 0.1em;
+}
+a:hover, a:focus{
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
 .menu img:hover,
 .menuItem:hover,
 i:hover
 {
-    color: rgb(255, 217, 0);
+    color: var(--hoverGold);
     transform: scale(1.2);
-    -ms-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -o-transform: scale(1.3);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .menu img:hover
 {
-    box-shadow: inset 0 0 8px rgba(255, 217, 0, 1), 0 0 15px rgba(255, 217, 0, 1);
-}
-
-.swap
-{
-    /* BG color is just for visibility while building */
-    background-color: blueviolet;
-    width: 100vw;
-    color: aliceblue;
-    /* height: 100vh; */
-    /* display: flex;
-    flex-direction: column; */
+    box-shadow: inset 0 0 8px var(--hoverGold), 0 0 15px var(--hoverGold);
 }
 
 .mainSection
@@ -173,22 +179,24 @@ i:hover
     width: 100vw;
 }
 
+.parallax
+{
+    height: 50vh;
+    background-image: url(../images/binary-code.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: sideScrollAnimation 10s infinite linear reverse;
+    opacity: 1;
+}
+
 .content
 {
     min-height: 100vh;
-    background-color: blueviolet;
     color: aliceblue;
     text-align: center;
-}
-
-.contentBackground
-{
-    position: absolute;
-    background-image: url(../images/stars.jpg);
-    background-size: contain;
-    height: 100vh;
-    /* overflow: hidden; */
-    z-index: 1;
+    background-image: linear-gradient(black, grey, black);
 }
 
 #profilePic
@@ -197,20 +205,12 @@ i:hover
     float: right;
     margin: 5%;
     border-radius: 20px;
+    filter: saturate(0%);
 }
 
-.parallax
+#profilePic:hover
 {
-    height: 50vh;
-    /* position: relative; */
-    background-image: url(../images/binary-code.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: cover;
-    /* overflow: hidden; */
-    animation: sideScrollAnimation 10s infinite linear reverse;
-    opacity: 0.8;
+    filter: saturate(100%);
 }
 
 .aboutText
@@ -227,37 +227,31 @@ i:hover
 .aboutText p
 {
     margin: 0 0 15px;
+    text-indent: 5rem;
 }
 
-.grid ul
+.workGrid ul
 {
-    /* BG color is just for visibility while building */
-    background-color: cadetblue;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     list-style: none;
     padding: 1rem;
-    /* overflow: auto; */
 }
 
-.grid li
+.workGrid li
 {
-    /* BG color is just for visibility while building */
-    background: tomato;
-
     max-width: 100%;
     max-height: 100%;
 }
 
-.grid li img
+.workGrid li img
 {
     max-width: 100%;
-    border: 5px ridge gold;
+    border: 5px ridge var(--lightGold);
 }
 
-.grid li:first-child
+.workGrid li:first-child
 {
     /* Adjust column/rows to size the first list element */
     grid-column: 1 / 3;
@@ -276,10 +270,7 @@ i:hover
 .contactLeft,
 .contactRight
 {
-    background-color: darkslategrey;
-
     width: 50%;
-
 }
 
 table td h4
@@ -300,14 +291,6 @@ table tr:last-child td
     vertical-align: top;
     padding: 0 4rem 0 0;
 }
-
-footer
-{
-    padding: 2rem;
-    height: 8rem;
-
-}
-
 
 @keyframes sideScrollAnimation
 {
@@ -339,7 +322,7 @@ footer
 
     a
     {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .aboutText
@@ -375,7 +358,7 @@ footer
 
     p
     {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     h2
@@ -390,12 +373,7 @@ footer
         padding: 20% 0 0 5%;
     }
 
-    h4
-    {
-        font-size: 1.5rem;
-    }
-
-    a
+    h4, a
     {
         font-size: 1.5rem;
     }
@@ -406,7 +384,7 @@ footer
         left: 2rem;
     }
 
-    .grid ul
+    .workGrid ul
     {
         grid-template-columns: repeat(2, 1fr);
     }
