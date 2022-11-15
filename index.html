@@ -17,45 +17,56 @@
 
 <body>
 
-    <!--Header-->
-    <!-- <header>
-
-        </header> -->
+    <!-- Header -->
+    <header>
+    </header>
 
     <main>
-
         <!-- Nav Sidebar -->
         <section class="menu">
             <nav class="sticky">
-                <a href="#initialDisplay"><img src="./assets/images/D.png" alt="The capital letter D"></a>
+                <a href="#initialDisplay"><img class="hoverScale hoverShadow" src="./assets/images/D.png"
+                        alt="The capital letter D">
+                </a>
                 <ul>
-                    <li><a href="#aboutDisplay"><i class="material-icons md-16">info</i>
-                            <div class="menuItem">About</div>
+                    <li><a href="#aboutDisplay">
+                            <i class="material-icons hoverScale">info</i>
+                            <div class="menuItem hoverScale">
+                                <span class="underlineAnimation">About</span>
+                            </div>
                         </a>
                     </li>
-                    <li><a href="#workDisplay"><i class="material-icons md-16">build</i>
-                            <div class="menuItem">Work</div>
+                    <li><a href="#workDisplay">
+                            <i class="material-icons hoverScale">build</i>
+                            <div class="menuItem hoverScale">
+                                <span class="underlineAnimation">Work</span>
+                            </div>
                         </a>
                     </li>
-                    <li><a href="#contactDisplay"><i class="material-icons md-16">email</i>
-                            <div class="menuItem">Contact</div>
+                    <li><a href="#contactDisplay">
+                            <i class="material-icons hoverScale">email</i>
+                            <div class="menuItem hoverScale">
+                                <span class="underlineAnimation">Contact</span>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </nav>
         </section>
 
-        <!--Main Content-->
+        <!-- Main Content -->
         <section class="mainSection">
             <div id="initialDisplay" class="content">
-                <img id="profilePic" src="./assets/images/portfoliopic.jpg">
-                <h2>Hey!<br>I'm Donovan</h2>
+                <img id="profilePic" src="./assets/images/portfoliopic.jpg"
+                    alt="Handsome young man with a beautiful smile">
+                <h1>Hey!<br>I'm Donovan</h1>
                 <p>I'm a potential full stack developer</p>
             </div>
 
+            <!-- About Display -->
             <div class="parallax"></div>
             <div id="aboutDisplay" class="content">
-                <h3>About</h3>
+                <h2>About</h2>
                 <section class="aboutText">
                     <p>
                         Hey, I'm Donovan Courtney and I have been fascinated with development since I wrote my first
@@ -72,35 +83,62 @@
                 </section>
             </div>
 
+            <!-- Work Display -->
             <div class="parallax"></div>
             <div id="workDisplay" class="content">
-                <h3>Work</h3>
-                <!-- Grid layout for work cards -->
+                <h2>Work</h2>
+                <!-- Grid layout -->
                 <section class="workGrid">
                     <ul class="list">
-                        <li><a href="https://decourtney.github.io/01-horiseon-accessibility-refactor/"
-                                target="_blank"><img src="./assets/images/html-image.jpg"></a></li>
-                        <li><a href="https://decourtney.github.io/myStudentBio/" target="_blank"><img
-                                    src="./assets/images/whoami.jpg"></a></li>
-                        <li><a href="https://decourtney.github.io/prework-study-guide/" target="_blank"><img
-                                    src="./assets/images/study.jpg"></a></li>
+                        <li>
+                            <a href="https://decourtney.github.io/01-horiseon-accessibility-refactor/" target="_blank">
+                                <div class="tagContainer hoverShadow">
+                                    <div class="tag">Code Refactor</div>
+                                    <img src="./assets/images/html-image.jpg"
+                                        alt="Computer screen displaying HTML code">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://decourtney.github.io/myStudentBio/" target="_blank">
+                                <div class="tagContainer hoverShadow">
+                                    <div class="tag">Bio Build</div>
+                                    <img class="hoverShadow" src="./assets/images/whoami.jpg"
+                                        alt="Four hooded figures wearing clown masks">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://decourtney.github.io/prework-study-guide/" target="_blank">
+                                <div class="tagContainer hoverShadow">
+                                    <div class="tag">Study Guide Build</div>
+                                    <img class="hoverShadow" src="./assets/images/study.jpg"
+                                        alt="Person sitting at a wooden table writing in a notebook">
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </section>
             </div>
 
+            <!-- Contact Display -->
             <div class="parallax"></div>
             <div id="contactDisplay" class="content">
-                <h3>Contact</h3>
+                <h2>Contact</h2>
+                <!-- Table layout for Contact info -->
                 <div class="contactContent">
                     <div class="contactLeft">
                         <table>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <h4>E-MAIL</h4>
+                                        <h3>E-MAIL</h3>
                                     </td>
-                                    <td><a href="mailto:donovan.courtney@gmail.com"
-                                            target="_blank">donovan.courtney@gmail.com</a>
+                                    <td>
+                                        <a href="mailto:donovan.courtney@gmail.com" target="_blank">
+                                            <span
+                                                class="underlineAnimation hoverScale">donovan.courtney@gmail.com</span>
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -111,16 +149,20 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <h4>SOCIAL NET</h4>
+                                        <h3>SOCIAL NET</h3>
                                     </td>
                                     <td>
                                         <ul>
                                             <li>
                                                 <a href="https://www.linkedin.com/in/donovan-c-9277b549/"
-                                                    target="_blank">Linkedin</a>
+                                                    target="_blank">
+                                                    <span class="underlineAnimation hoverScale">Linkedin</span>
+                                                </a>
                                             </li>
                                             <li>
-                                                <a href="">Facebook</a>
+                                                <a href="">
+                                                    <span class="underlineAnimation hoverScale">Facebook</span>
+                                                </a>
                                             </li>
                                         </ul>
                                     </td>
@@ -129,20 +171,16 @@
                         </table>
                     </div>
                 </div>
-
         </section>
-        </div>
-
     </main>
 
-    <!--Footer-->
+    <!-- Footer -->
     <footer>
         <section>
-            <h5>Built by Donovan Courtney</h5>
+            <h4>Built by Donovan Courtney</h4>
         </section>
     </footer>
 
-    </section>
 </body>
 
 </html>
