@@ -105,6 +105,7 @@ main
 
 .hoverScale
 {
+    /* Scale speed for hover elements */
     transition: transform 0.25s ease;
 }
 
@@ -130,6 +131,7 @@ main
 
 .sticky
 {
+    /* Make the sidebar not scroll with site */
     position: sticky;
     top: 15rem;
 }
@@ -153,6 +155,7 @@ li
 
 .menu .material-icons
 {
+    /* Hide nav icons for larger resolutions */
     display: none;
     padding-right: 2rem;
     vertical-align: middle;
@@ -168,6 +171,7 @@ li
 
 .parallax
 {
+    /* Scrolling parallax background between sections */
     height: 50vh;
     background-image: url(../images/binary-code.jpg);
     background-attachment: fixed;
@@ -227,7 +231,7 @@ li
 
 .tagContainer
 {
-    /* Image and Tag container */
+    /* Image and Tag container for project pics */
     position: relative;
     overflow: hidden;
     margin: 0;
@@ -273,6 +277,7 @@ table
 
 table td h3
 {
+    /* Displays '...' instead of cropping the text*/
     text-overflow: ellipsis;
 }
 
@@ -354,30 +359,25 @@ table tr:last-child td
     }
 }
 
-/* --- Media Screen --- */
+/* --- Media Screen 1440px --- */
 @media screen and (max-width: 1440px)
 {
-    table
+    /* Shift the Contact info tables to take 100% width forcing them to stack */
+    table, .contactRight,
+        .contactLeft
     {
         width: 100%;
         table-layout: fixed;
         padding-right: 10rem;
     }
 
-    .contactRight,
-    .contactLeft
-    {
-        width: 100%;
-    }
-
     a
     {
         font-size: 2.1rem;
     }
-
-
 }
 
+/* --- Media Screen 768px --- */
 @media screen and (max-width: 768px)
 {
     .menu
