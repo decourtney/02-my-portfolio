@@ -1,4 +1,4 @@
-# Hoeriseon Accessibility Refactor
+# My Portfolio Full Build
 
 ## Description
 The best way to show potential employers a developers capabilities is to have a professional looking portfolio. The purpose of this project is to build a basic portfolio without starter code. The portfolio should have an initial splash screen, about section, completed projects section, and contact information. The site should also have navigation links to jump to the different sections. This project is intended to force me out of my comfort zone by starting with a blank page and apply everything we've learned so far to a full build of a portfolio with a personal touch.
