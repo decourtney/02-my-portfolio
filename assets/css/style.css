@@ -114,7 +114,7 @@ main
 {
     max-width: 30%;
     float: right;
-    margin: 5%;
+    margin: 5% 3% 0 3%;
     border-radius: 20px;
     filter: saturate(0%);
     transition: filter 0.25s ease;
@@ -196,7 +196,7 @@ li
 
 .aboutText p
 {
-    margin: 0 0 15px;
+    margin: 0 0 0px 0;
     text-indent: 5rem;
 }
 
@@ -443,7 +443,7 @@ table tr:last-child td
 
     .profilePic
     {
-        max-width: 75%;
+        max-width: 65%;
         float: unset;
     }
 

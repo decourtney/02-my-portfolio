@@ -7,7 +7,7 @@ Deployed Project: https://decourtney.github.io/111722-my-portfolio-build/
 
 <br>
     <div>  
-        <img src="./assets/images/fullsiteSS.png" alt="Horiseon Site" style="max-width: 300px; display: block;" />  
+        <img src="./assets/images/fullsiteSS.png" alt="Screenshot of Donovan's Portfolio" style="max-width: 300px; display: block;" />  
     </div>
 <br>
 
