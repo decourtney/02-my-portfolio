@@ -443,7 +443,6 @@ table tr:last-child td
 
     .profilePic
     {
-        margin: 0;
         max-width: 75%;
         float: unset;
     }
