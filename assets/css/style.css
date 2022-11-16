@@ -160,12 +160,12 @@ li
     background-position: center;
     background-repeat: repeat-x;
     background-size: cover;
-    animation: sideScrollAnimation 10s infinite linear reverse;
+    animation: sideScrollAnimation 20s infinite linear reverse;
     opacity: 1;
 }
 
-/* Initial Display */
-#profilePic
+/* My pics style */
+.profilePic
 {
     max-width: 30%;
     float: right;
@@ -284,7 +284,7 @@ table tr:last-child td
 }
 
 /* --- Hover Effects --- */
-#profilePic:hover
+.profilePic:hover
 {
     filter: saturate(100%);
 }
@@ -371,11 +371,7 @@ table tr:last-child td
         font-size: 2.1rem;
     }
 
-    .aboutText
-    {
-        width: 75%;
-    }
-
+    
 }
 
 @media screen and (max-width: 768px)
@@ -441,7 +437,7 @@ table tr:last-child td
         margin: 5% 0 0 0;
     }
 
-    #profilePic
+    .profilePic
     {
         margin: 0;
         max-width: 75%;
