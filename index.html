@@ -1,204 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donovan | Developer</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
-    <header>
-    </header>
+    <header></header>
 
     <main>
-        <!-- Nav Sidebar -->
-        <section class="menu">
-            <nav class="sticky">
-                <a href="#initialDisplay"><img class="hoverScale hoverShadow" src="./assets/images/D.png"
-                        alt="The capital letter D">
+      <!-- Nav Sidebar -->
+      <section class="menu">
+        <nav class="sticky">
+          <a href="#initialDisplay"
+            ><img
+              class="hoverScale hoverShadow"
+              src="./assets/images/D.png"
+              alt="The capital letter D"
+            />
+          </a>
+          <ul>
+            <li>
+              <a href="#aboutDisplay">
+                <i class="material-icons hoverScale">info</i>
+                <div class="menuItem hoverScale">
+                  <span class="underlineAnimation">About</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#workDisplay">
+                <i class="material-icons hoverScale">build</i>
+                <div class="menuItem hoverScale">
+                  <span class="underlineAnimation">Work</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#contactDisplay">
+                <i class="material-icons hoverScale">email</i>
+                <div class="menuItem hoverScale">
+                  <span class="underlineAnimation">Contact</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Main Content -->
+      <section class="mainSection">
+        <div id="initialDisplay" class="content">
+          <img
+            class="profilePic"
+            src="./assets/images/portfoliopic.jpg"
+            alt="Handsome young man with a beautiful smile"
+          />
+          <h1>Hey!<br />I'm Donovan</h1>
+          <p>Full Stack Engineer</p>
+        </div>
+
+        <!-- About Display -->
+        <div class="parallax"></div>
+        <div id="aboutDisplay" class="content">
+          <h2>About</h2>
+          <div>
+            <img
+              class="profilePic"
+              src="./assets/images/fam.jpg"
+              alt="Myself, wife, and our four kids"
+            />
+          </div>
+          <div class="aboutText">
+            <p>
+              Hey, I'm Donovan Courtney and I have been fascinated with
+              development since I wrote my first web page at age 16. Through the
+              years I wrote countless python scripts and in 2015 I published a
+              mobile app utilizing the Unity Game Engine.
+            </p>
+            <p>
+              Currently, I'm enrolled in an intense Full Stack coding bootcamp
+              to help give me a boost in coding proficiency and experience
+              working in a team environment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Work Display -->
+        <div class="parallax"></div>
+        <div id="workDisplay" class="content">
+          <h2>Work</h2>
+          <!-- Grid layout -->
+          <section class="workGrid">
+            <ul class="list">
+              <li>
+                <a
+                  href="https://chriseligirard.github.io/movienightGame/index.html"
+                  target="_blank"
+                >
+                  <div class="tagContainer hoverShadow hoverScale">
+                    <div class="tag">Movie Game Night</div>
+                    <img
+                      src="./assets/images/group_project.jpg"
+                      alt="Five people bumping fists"
+                    />
+                  </div>
                 </a>
-                <ul>
-                    <li><a href="#aboutDisplay">
-                            <i class="material-icons hoverScale">info</i>
-                            <div class="menuItem hoverScale">
-                                <span class="underlineAnimation">About</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="#workDisplay">
-                            <i class="material-icons hoverScale">build</i>
-                            <div class="menuItem hoverScale">
-                                <span class="underlineAnimation">Work</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="#contactDisplay">
-                            <i class="material-icons hoverScale">email</i>
-                            <div class="menuItem hoverScale">
-                                <span class="underlineAnimation">Contact</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+              </li>
+              <li>
+                <a
+                  href="https://decourtney.github.io/horiseon-accessibility-refactor/"
+                  target="_blank"
+                >
+                  <div class="tagContainer hoverShadow hoverScale">
+                    <div class="tag">Code Refactor</div>
+                    <img
+                      src="./assets/images/html-image.jpg"
+                      alt="Computer screen displaying HTML code"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://decourtney.github.io/myStudentBio/"
+                  target="_blank"
+                >
+                  <div class="tagContainer hoverShadow hoverScale">
+                    <div class="tag">Bio Build</div>
+                    <img
+                      class="hoverShadow"
+                      src="./assets/images/whoami.jpg"
+                      alt="Four hooded figures wearing clown masks"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://decourtney.github.io/prework-study-guide/"
+                  target="_blank"
+                >
+                  <div class="tagContainer hoverShadow hoverScale">
+                    <div class="tag">Study Guide Build</div>
+                    <img
+                      class="hoverShadow"
+                      src="./assets/images/study.jpg"
+                      alt="Person sitting at a wooden table writing in a notebook"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
 
-        <!-- Main Content -->
-        <section class="mainSection">
-            <div id="initialDisplay" class="content">
-                <img class="profilePic" src="./assets/images/portfoliopic.jpg"
-                    alt="Handsome young man with a beautiful smile">
-                <h1>Hey!<br>I'm Donovan</h1>
-                <p>Full Stack Engineer</p>
+        <!-- Contact Display -->
+        <div class="parallax"></div>
+        <div id="contactDisplay" class="content">
+          <h2>Contact</h2>
+          <!-- Table layout for Contact info -->
+          <div class="contactContent">
+            <div class="contactLeft">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h3>E-MAIL</h3>
+                    </td>
+                    <td>
+                      <a
+                        href="mailto:donovan.courtney@gmail.com"
+                        target="_blank"
+                      >
+                        <span class="underlineAnimation hoverScale"
+                          >donovan.courtney@gmail.com</span
+                        >
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <!-- About Display -->
-            <div class="parallax"></div>
-            <div id="aboutDisplay" class="content">
-                <h2>About</h2>
-                <div>
-                    <img class="profilePic" src="./assets/images/fam.jpg" alt="Myself, wife, and our four kids">
-                </div>
-                <div class="aboutText">
-                    <p>
-                        Hey, I'm Donovan Courtney and I have been fascinated with development since I wrote my first
-                        web
-                        page at age 16. Through the years I wrote countless python scripts and in 2015 I published a
-                        mobile
-                        app
-                        utilizing the Unity Game Engine.
-                    </p>
-                    <p>
-                        Currently, I'm enrolled in an intense Full Stack coding bootcamp to help give me a boost in
-                        coding proficiency and experience working in a team environment.
-                    </p>
-                </div>
+            <div class="contactRight">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h3>SOCIAL NET</h3>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/in/donovan-c-9277b549/"
+                            target="_blank"
+                          >
+                            <span class="underlineAnimation hoverScale"
+                              >Linkedin</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <span class="underlineAnimation hoverScale"
+                              >Facebook</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <!-- Work Display -->
-            <div class="parallax"></div>
-            <div id="workDisplay" class="content">
-                <h2>Work</h2>
-                <!-- Grid layout -->
-                <section class="workGrid">
-                    <ul class="list">
-                        <li>
-                            <a href="https://intense-everglades-85455.herokuapp.com/" target="_blank">
-                                <div class="tagContainer hoverShadow hoverScale">
-                                    <div class="tag">Break-Sweat</div>
-                                    <img src="./assets/images/break-sweat.png" alt="Break-Sweat Homepage">
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chriseligirard.github.io/movienightGame/index.html" target="_blank">
-                                <div class="tagContainer hoverShadow hoverScale">
-                                    <div class="tag">Movie Game Night</div>
-                                    <img src="./assets/images/group_project.jpg" alt="Five people bumping fists">
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://decourtney.github.io/horiseon-accessibility-refactor/" target="_blank">
-                                <div class="tagContainer hoverShadow hoverScale">
-                                    <div class="tag">Code Refactor</div>
-                                    <img src="./assets/images/html-image.jpg"
-                                        alt="Computer screen displaying HTML code">
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://decourtney.github.io/myStudentBio/" target="_blank">
-                                <div class="tagContainer hoverShadow hoverScale">
-                                    <div class="tag">Bio Build</div>
-                                    <img class="hoverShadow" src="./assets/images/whoami.jpg"
-                                        alt="Four hooded figures wearing clown masks">
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://decourtney.github.io/prework-study-guide/" target="_blank">
-                                <div class="tagContainer hoverShadow hoverScale">
-                                    <div class="tag">Study Guide Build</div>
-                                    <img class="hoverShadow" src="./assets/images/study.jpg"
-                                        alt="Person sitting at a wooden table writing in a notebook">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <!-- Contact Display -->
-            <div class="parallax"></div>
-            <div id="contactDisplay" class="content">
-                <h2>Contact</h2>
-                <!-- Table layout for Contact info -->
-                <div class="contactContent">
-                    <div class="contactLeft">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <h3>E-MAIL</h3>
-                                    </td>
-                                    <td>
-                                        <a href="mailto:donovan.courtney@gmail.com" target="_blank">
-                                            <span
-                                                class="underlineAnimation hoverScale">donovan.courtney@gmail.com</span>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="contactRight">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <h3>SOCIAL NET</h3>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>
-                                                <a href="https://www.linkedin.com/in/donovan-c-9277b549/"
-                                                    target="_blank">
-                                                    <span class="underlineAnimation hoverScale">Linkedin</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.facebook.com/" target="_blank">
-                                                    <span class="underlineAnimation hoverScale">Facebook</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <section>
-            <h4>Built by Donovan Courtney</h4>
-        </section>
+      <section>
+        <h4>Built by Donovan Courtney</h4>
+      </section>
     </footer>
-
-</body>
-
+  </body>
 </html>
